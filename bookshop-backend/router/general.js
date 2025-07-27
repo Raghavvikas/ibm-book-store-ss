@@ -1,5 +1,5 @@
 const express = require("express");
-let books = require("./booksdb.js");
+let books = require("../db/books");
 let general = express.Router();
 
 // Task 1: Get all books
