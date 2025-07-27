@@ -1,6 +1,16 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const users = [];
+const users = [
+  {
+    "username": "john123",
+    "password": "mypassword"
+  },
+  {
+    "username": "raghav",
+    "password": "raghav"
+  }
+    
+];
 const books = require("./booksdb.js");
 
 const authenticated = express.Router();

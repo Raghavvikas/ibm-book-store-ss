@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
 // GET by ISBN
 router.get('/:isbn', (req, res) => {
   const book = books[req.params.isbn];
+  console.log(req.params);
   if (book) {
     res.json(book);
   } else {
